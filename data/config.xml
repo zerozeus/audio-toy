@@ -1,0 +1,8 @@
+<type>
+	<item name="unvoiced">0</item>
+	<item name="voiced">1</item>
+	<item name="noise">2</item>
+	<item name="humm">3</item>
+	<item name="na">4</item>
+</type>
+

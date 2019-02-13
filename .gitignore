@@ -1,0 +1,10 @@
+.DS_Store
+*.pyc
+.vscode/*
+.vscode
+tf/*
+data/audio/environment
+data/audio/human
+data/test.xml
+data/train.xml
+

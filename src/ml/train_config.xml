@@ -1,0 +1,26 @@
+<train_params>
+
+	<param name="intermediate_output_graphs_dir" value="temp/intermediate_graph/" type='path'/>
+	<param name="intermediate_store_frequency" value="0" type='int'/>
+	<param name="summaries_dir" value="temp/retrain_logs" type='path'/>
+	<param name="model_dir" value="temp/imagenet" type='path'/>
+	<param name="bottleneck_dir" value="temp/bottleneck" type='path'/>
+
+	<param name="how_many_training_steps" value="4000" type='int'/>
+	<param name="learning_rate" value="0.01" type='float'/>
+	<param name="testing_percentage" value="10" type='int'/>
+	<param name="eval_step_interval" value="10" type='int'/>
+	<param name="train_batch_size" value="100" type='int'/>
+	<param name="test_batch_size" value="-1" type='int'/>
+	<param name="validation_batch_size" value="100" type='int'/>
+	<param name="validation_percentage" value="10" type='int'/>
+	
+	<param name="final_tensor_name" value="final_result" type='name'/>
+
+	<param name="random_crop" value="0" type='int'/>
+	<param name="random_scale" value="0" type='int'/>
+
+	<!-- <param name="architecture" value="mobilenet_0.25_128_quantized" type='name'/> -->
+	<param name="architecture" value="inception_v3" type='name'/>
+
+</train_params>
