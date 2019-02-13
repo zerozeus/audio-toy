@@ -49,17 +49,17 @@
 
     `MobileNet`支持多种规格，合法字段如`mobilenet_0.25_128_quantized`，第一个数字代表模型参数的多少，选择范围 [`1.0`, `0.75`, `0.50`, `0.25`] ，第二个参数代表模型的输入图片的尺寸，选择范围 [`224`, `192`, `160`, `128`] ，两者的数字越小代表模型越小，速度越快，准确度越低。
 
-- 训练参数和数据准备完成后，进入项目根目录，执行train.py脚本，在默认参数下，最终生成的模型位于`audio_toy/src/ml/model/output_graph.pb`
+- 训练参数和数据准备完成后，进入项目根目录，执行train.py脚本，在默认参数下，最终生成的模型位于`audio-toy/src/ml/model/output_graph.pb`
 
 	```shell
-	cd ./audio_toy
+	cd ./audio-toy
 	python src/train.py
 	```
 
-- 训练过程中的log会放在 `audio_toy/src/ml/temp/retrain_logs`中，可以使用`tensorboard`看到可视化的结果：
+- 训练过程中的log会放在 `audio-toy/src/ml/temp/retrain_logs`中，可以使用`tensorboard`看到可视化的结果：
 
 	```shell
-	tensorboard --logdir audio_toy/src/ml/temp/retrain_logs
+	tensorboard --logdir audio-toy/src/ml/temp/retrain_logs
 	```
 
 ### 使用
@@ -67,7 +67,7 @@
 假设模型已经训练完毕，现在需要预测某个音频文件中某种特征声音出现的时机。同样进入项目根目录，执行apply.py脚本。如果路径均为之前的默认路径，那么可以直接使用下面的命令：
 
 ```shell
-cd ./audio_toy
+cd ./audio-toy
 python src/apply.py \
         --audio /path/to/your/audio_file \
         --start 1000 \
