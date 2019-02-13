@@ -109,5 +109,6 @@ python src/apply.py \
 
 - [基于 TensorflowLite 在移动端实现人声识别](https://www.infoq.cn/article/speaker-dentification-based-on-tensorflowlite)
 - [UrbanSound](https://urbansounddataset.weebly.com/)
+- [Deep Convolutional Neural Networks and Data Augmentation for Environmental Sound Classification](https://arxiv.org/pdf/1608.04363.pdf)
 - [tensorflow-for-poets-2](https://github.com/googlecodelabs/tensorflow-for-poets-2)
 - [human-voice-dataset](https://github.com/vocobox/human-voice-dataset)
